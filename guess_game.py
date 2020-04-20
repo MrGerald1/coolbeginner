@@ -88,8 +88,3 @@ elif user_input=='Hard':
             print('You have', n,'attempts left, try again.')
     if n == 0:
         print('Game over, you have no more attempts again.\nThe random number is', generated_num)
-
-
-if num not in range(0,11):
-    print('Enter a number between 0 and 10')
-    num=int(input('What number is it? '))
