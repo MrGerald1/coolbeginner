@@ -34,11 +34,11 @@ if user_input=='Easy':
         print('Game over, you have no more attempts again.\nThe random number is', generated_num)
 
 elif user_input=='Medium':
-    #On medium, user has to guess number between 1-20 with 5 guesses
+    #On medium, user has to guess number between 1-20 with 4 guesses
     generated_num= randrange(1,20)
-    print('In this difficulty, you have only 5 guesses to choose the correct random number between 1-20')
+    print('In this difficulty, you have only 4 guesses to choose the correct random number between 1-20')
     print('Guess the correct random number between 1-20')
-    n=5
+    n=4
     while n>=1:
         num=int(input('What number is it? '))
         while num not in range(0,21):
@@ -62,9 +62,9 @@ elif user_input=='Medium':
 elif user_input=='Hard':
     #On hard, user has to guess number between 1-50 with 4 guesses
     generated_num= randrange(1,50)
-    print('In this difficulty, you have only 4 guesses to choose the correct random number between 1-50')
+    print('In this difficulty, you have only 3 guesses to choose the correct random number between 1-50')
     print('Guess the correct random number between 1-50')
-    n=4
+    n=3
     while n>=1:
         num=int(input('What number is it? '))
         while num not in range(0,51):
